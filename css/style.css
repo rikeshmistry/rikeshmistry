@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
+
+body {
+  height: 100vh;
+  background: #FBB040;
+  font-family: 'Ubuntu', sans-serif;
+  color: #ffffff;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  margin: 10px 0;
+}
+
+h2 {
+  text-align: center;
+  font-size: 25px;
+  /* vmin is related to the Viewport to optimise for Mobile and Web together  */
+}
+
+section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 60%;
+}
+
+.button {
+  font-size: 40px;
+  font-size: 7vmin;
+  color: white;
+  height: 30px;
+  cursor: pointer;
+  margin: 0 50px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 650px) {
+  .button {
+    font-size: 30px;
+  }
+}
