@@ -1,51 +1,164 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
 
 body {
-  height: 100vh;
-  background: #FBB040;
   font-family: 'Ubuntu', sans-serif;
-  color: #ffffff;
+  text-align: center;
+  background-color: #FBB040;
+  color: white;
+  line-height: 1.5;
+  font-size: 16px;
+  width: 100%;
+  margin: 0 auto 0 auto;
 }
 
 h1 {
-  text-align: center;
-  font-size: 50px;
-  margin: 10px 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
 }
 
 h2 {
-  text-align: center;
-  font-size: 25px;
-  /* vmin is related to the Viewport to optimise for Mobile and Web together  */
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
 }
 
-section {
+nav {
+  margin-bottom: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: black;
+}
+
+#slider,
+.wrap,
+.slide-content {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 700;
+  width: 70%;
+  height: 300px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.wrap {
+  position: relative;
+}
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide1 {
+  background-image: url("../images/profile-photo.jpg");
+}
+
+.slide2 {
+  background-image: url("../images/munch.png");
+}
+
+.slide3 {
+  background-image: url("../images/bali-traveller.png");
+}
+
+.slide4 {
+  background-image: url("../images/granular.png");
+}
+
+.slide5 {
+  background-image: url("../images/last-studio.png");
+}
+
+.slide6 {
+  background-image: url("../images/javascript-slider.png");
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+}
+
+.slide-content span {
+  font-size: 28px;
+  color: #ffffff;
+  background-color: #FBB040;
+  padding: 8px 30px;
+  margin-bottom: 30px;
+}
+
+.arrow {
+  cursor: pointer;
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  width: 60%;
+  margin-top: -35px;
+  width: 0;
+  height: 0;
+  font-size: 50px;
 }
 
-.button {
-  font-size: 40px;
-  font-size: 7vmin;
-  color: white;
-  height: 30px;
-  cursor: pointer;
-  margin: 0 50px;
+#arrow-left {
+  /* border-width: 30px 40px 30px 0;
+  border-color: transparent #ffffff transparent transparent; */
+  left: 30px;
+}
+
+#arrow-right {
+  /* border-width: 30px 0 30px 40px;
+  border-color: transparent transparent transparent #ffffff; */
+  right: 54px;
 }
 
 footer {
-  position: absolute;
-  bottom: 0%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 30px 0;
 }
 
-@media screen and (max-width: 650px) {
-  .button {
-    font-size: 30px;
-  }
+.social-links {
+  margin-bottom: 15px;
 }
+
+footer a {
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  text-transform: uppercase;
+}
+
+footer a:hover {
+  color: black;
+}
+
+@media screen and (max-width: 1100px) {
+  body {
+    margin: 0 20px;
+    width: auto;
+  }
+
+  img, iframe {
+    max-width: 100%;
+  }
+
+  div.post-content {
+    padding: 35px;
+  }
+
+  header {
+    margin: 30px 0;
+  }
+
+  /* Change the background color to white on the hover */
+  nav a:hover {
+    background-color: white;
+  }
