@@ -98,6 +98,14 @@ p {
   background-image: url("../images/javascript-slider.png");
 }
 
+.slide6 {
+  background-image: url("../images/javascript-slider.png");
+}
+
+.slide7 {
+  background-image: url("../images/javascript-slider.png");
+}
+
 .slide-content {
   display: flex;
   flex-direction: column;

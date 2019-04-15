@@ -47,3 +47,6 @@ arrowRight.addEventListener("click", function() {
 });
 
 startSlide();
+
+
+// Modal Popup
