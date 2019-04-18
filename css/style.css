@@ -21,7 +21,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: orange;
+  color: #FBB040;
   padding: 10px 0;
 }
 
@@ -50,7 +50,7 @@ nav {
 }
 
 nav a {
-  color: orange;
+  color: #FBB040;
   text-decoration: none;
   padding: 20px;
   text-transform: uppercase;
@@ -124,7 +124,7 @@ p {
 }
 
 .slide7 {
-  background-image: url("../images/javascript-slider.png");
+  background-image: url("../images/mistry-blog.png");
 }
 
 .slide-content {
@@ -254,7 +254,7 @@ i:hover {
   }
 
   div.wide-header {
-    background-color: orange;
+    background-color: #FBB040;
   }
 
   nav a {
